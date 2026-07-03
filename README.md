@@ -1,4 +1,15 @@
 # haker-rank-funs
+3-7-2026
+Summary of the "Top Earners" ProblemThe Core Objective
+You need to write an SQL query to find the absolute highest total earnings among all employees in the company, and then count exactly how many employees made that maximum amount.  Key DefinitionsTotal Earnings: Calculated by multiplying an employee's months worked by their monthly salary.  Maximum Total Earnings: The single highest earnings value found across the entire Employee table.  The Employee Table SchemaThe data is stored in a table named Employee with the following columns:employee_id (Integer): The employee's unique ID number.  name (String): The employee's name.  months (Integer): The total number of months they have worked for the company.  salary (Integer): The employee's monthly salary.  Expected OutputYour query must print exactly two integer values separated by a single space:The maximum total earnings value.  The total count of employees who achieved that specific maximum total earnings.  (For example, if the highest earnings calculated is 69952 and only 1 employee earned that amount, the expected output is simply 69952 1.)  
+
+solutiion
+
+SELECT months*salary as earnings,count(*) 
+from Employee
+GROUP BY earnings
+ORDER BY earnings DESC
+LIMIT 1;
 
 Agragate 1 st qustions <img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/53bf9faa-ed1d-4057-9929-a716f6cd701e" />
 
