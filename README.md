@@ -9,7 +9,8 @@ SELECT months*salary as earnings,count(*)
 from Employee
 GROUP BY earnings
 ORDER BY earnings DESC
-LIMIT 1;
+LIMIT 1;<img width="693" height="697" alt="image" src="https://github.com/user-attachments/assets/dcbe5cd7-cb2d-4ed2-9ddd-dedcf2b6d6ca" />
+
 
 Agragate 1 st qustions <img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/53bf9faa-ed1d-4057-9929-a716f6cd701e" />
 
